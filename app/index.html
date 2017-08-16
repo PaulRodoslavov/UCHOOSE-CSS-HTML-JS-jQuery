@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<title>Theme Template for Bootstrap</title>
+
+	<!-- Custom styles for this template -->
+	<link href="styles/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/awesome-library/css/font-awesome.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<header class="header">
+		<div class="wrapper flex">
+			<div class="img-filter none-320"></div>
+			<div class="header--tittle"><a href="">Uchoose</a></div>
+			<div class="img-dots none-320"></div>
+			<ul class="header--nav flex">
+
+
+				<li class="top-nav-head">
+					<a href="" class="flex nav-a-head">
+						<div class="header__favorit1">&#10084</div>
+						<div class="header__favorit2">избранное</div>
+					</a>
+				</li>
+
+				<li class="top-nav-head">
+					<div class="nav-head-bord1"></div>
+					<a href="#" class="nav-a-head">UAH</a>
+				</li>
+
+				<li class="top-nav-head">
+					<div class="nav-head-bord2"></div>
+					<a href="#" class="nav-a-head">Контакты</a>
+					<div class="drop-contact">
+						<div>+38 098 228 10 01</div>
+						<div>+38 098 228 10 01</div>
+						<div>+38 098 228 10 01</div>
+						<div>artur_gangster@gmail.com</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</header>
+	<div class="header--search">
+		<div class="header-background-imgs">
+			<img src="./img/svg_right.png" class="header-background-imgs__left-image"></img>
+			<img src="./img/svg_left.png" class="header-background-imgs__right-image"></img>
+		</div>
+		<div class="wrapper">
+			<div class="search-wrapper">
+				<form class="header-form">
+					<div class="search--input--wrapper">
+						<input type="text" placeholder
+								="Шарм-эль-Шейх" class="search__input">
+						<button class="search__btn">
+							<span class="btn--text">Поиск</span>
+						</button>
+					</div>
+					<div class="searching-filter flex">
+						<div class="searching-filter__filter-item">
+							<div class="date-picker-input">
+								<i class="date-picker-input__icon">
+									<img src="img/search--result1.png" alt="">
+								</i>
+								<p class="date-picker-input__label">Заезд с:</p>
+								<input class="date-picker-input__input icon1" type="text" id="header_entry_date_picker"
+										 placeholder="Вс., 18/06/17">
+							</div>
+						</div>
+						<div class="searching-filter__filter-item">
+							<div class="date-picker-input">
+								<i class="date-picker-input__icon">
+									<img src="img/search--result2.png" alt="">
+								</i>
+								<p class="date-picker-input__label">Выезд по:</p>
+								<input class="date-picker-input__input icon1" type="text" id="header_out_date_picker"
+										 placeholder="Вс., 18/06/17">
+							</div>
+						</div>
+						<div class="searching-filter__filter-item">
+							<div class="date-picker-input">
+								<div id="number_count_input_wrapper" class="date-picker-input__wrapper">
+									<i class="date-picker-input__icon">
+										<img src="img/search--result3.png" alt="">
+									</i>
+									<p class="date-picker-input__label">Размещение:</p>
+									<span class="number-count-input-preview date-picker-input__input c-button c-button--dropdown js-dropdown__current"><span
+											id="number_count_input_preview_adult">1</span> взр. + <span
+											id="number_count_input_preview_child">1</span> реб</span>
+								</div>
+								<ul id="number_count_input_drop_down" class="number-count">
+									<li class="number-count-row">
+										<div class="quantity number-count-quantity">
+											<div class="quantity-wrapper">
+												<span class="input-number-decrement custom">–</span><input id="input_number_adult"
+																															  class="input-number"
+																															  size="20" type="text"
+																															  value="1" min="0"
+																															  max="99"><span
+													class="input-number-desc">Взрослых</span><span
+													class="input-number-increment custom">+</span>
+											</div>
+										</div>
+									</li>
+									<li class="number-count-row">
+										<div class="quantity number-count-quantity">
+											<div class="quantity-wrapper">
+												<span class="input-number-decrement custom">–</span><input id="input_number_child"
+																															  class="input-number"
+																															  size="20" type="text"
+																															  value="1" min="0"
+																															  max="99"><span
+													class="input-number-desc">Детей</span><span
+													class="input-number-increment custom">+</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="searching-filter__filter-item">
+							<div class="date-picker-input c-dropdown js-dropdown">
+								<i class="date-picker-input__icon">
+									<img src="img/search--result4.png" alt="">
+								</i>
+								<p class="date-picker-input__label">Вылет из:</p>
+								<input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+								<span class="date-picker-input__input c-button c-button--dropdown js-dropdown__current">Дубаи
+								</span>
+								<ul class="c-dropdown__list">
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Виница</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Луцк</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Одесса</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Киев</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Ужгород</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="extra--opt none-320">
+		<div class="wrapper flex">
+			<div class="extra__text">Дополнительные критерии</div>
+			<img src="img/arrow-down.png" alt="">
+		</div>
+	</div>
+
+	<section class="content">
+
+		<div class="wrapper flex">
+			<div class="filter--wrapper">
+				<div class="filter--wrapper__inner">
+					<div class="filter__stars">
+						<div class="filter__inner1">
+							<div class="will">Укажите свои пожелания</div>
+							<div class="count__star"><span>Количество звезд:</span><img src="img/ask.png" alt="ask"></div>
+							<div class="block__stars">
+								<label class="checkbox-wrp-str">
+									<input type="checkbox"/>
+									<div class="stars__inner flex-column">
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+								</label>
+								<label class="checkbox-wrp-str">
+									<input type="checkbox"/>
+									<div class="stars__inner flex-column">
+										<div class="star-flex">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
+									</div>
+								</label>
+								<label class="checkbox-wrp-str">
+									<input type="checkbox"/>
+									<div class="stars__inner flex-row">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+								</label>
+								<label class="checkbox-wrp-str">
+									<input type="checkbox"/>
+									<div class="stars__inner flex-column">
+										<div class="star-flex">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
+										<div class="star-flex">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
+									</div>
+								</label>
+								<label class="checkbox-wrp-str">
+									<input type="checkbox"/>
+									<div class="stars__inner flex-column">
+										<div class="star-flex">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
+										<div class="star-flex">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="filter__food">
+						<div class="checkboxes">
+							<span>Тип питания:</span>
+							<img src="img/ask.png" alt="ask">
+						</div>
+
+						<div class="control-group">
+							<label class="control control--checkbox">
+								<input type="checkbox">
+								<span class="checkbox--word">RO</span>
+								<div class="control__indicator"></div>
+							</label>
+							<label class="control control--checkbox">
+								<input type="checkbox"/>
+								<span class="checkbox--word">BB</span>
+								<div class="control__indicator"></div>
+							</label>
+							<label class="control control--checkbox">
+								<input type="checkbox"/>
+								<span class="checkbox--word">HB</span>
+								<div class="control__indicator"></div>
+							</label>
+
+							<label class="control control--checkbox">
+								<input type="checkbox"/>
+								<span class="checkbox--word">FB</span>
+								<div class="control__indicator"></div>
+							</label>
+						</div>
+
+
+						<div class="control-group distance">
+							<label class="control control--checkbox">
+								<input type="checkbox">
+								<span class="checkbox--word">AI</span>
+								<div class="control__indicator"></div>
+							</label>
+							<label class="control control--checkbox">
+								<input type="checkbox"/>
+								<span class="checkbox--word">UAI</span>
+								<div class="control__indicator"></div>
+							</label>
+							<label class="control control--checkbox slow">
+								<input type="checkbox"/>
+								<span class="checkbox--word">Любое</span>
+								<div class="control__indicator"></div>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="filter__stop">
+					<div class="check-box distance">
+						<label class="control control--checkbox">
+							<input type="checkbox">
+							<span class="checkbox--word">Есть места на рейсе</span>
+							<div class="control__indicator"></div>
+						</label>
+						<img src="img/ask.png" alt="ask">
+					</div>
+					<div class="check-box">
+						<label class="control control--checkbox">
+							<input type="checkbox">
+							<span class="checkbox--word">Нет остановки продаж</span>
+							<div class="control__indicator"></div>
+						</label>
+						<img src="img/ask.png" alt="ask">
+					</div>
+				</div>
+
+				<div class="filter__nights">
+					<div class="night__sum">
+						<span>Количество ночей:</span>
+					</div>
+					<div class="night-select-row nights__select">
+						<div class="night-select-row__input">
+							<div class="date-picker-input date-picker-input--simple c-dropdown js-dropdown">
+								<i class="date-picker-input__icon fa fa-calendar"></i>
+								<p class="date-picker-input__label">Выезд по:</p>
+								<input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+								<span class="date-picker-input__input c-button c-button--dropdown js-dropdown__current">От:</span>
+								<ul class="c-dropdown__list">
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Виница</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Луцк</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Одесса</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Киев</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Ужгород</li>
+								</ul>
+							</div>
+						</div>
+						<div class="night-select-row__input">
+							<div class="date-picker-input date-picker-input--simple c-dropdown js-dropdown">
+								<i class="date-picker-input__icon fa fa-calendar"></i>
+								<p class="date-picker-input__label">Выезд по:</p>
+								<input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+								<span class="date-picker-input__input c-button c-button--dropdown js-dropdown__current">До:</span>
+								<ul class="c-dropdown__list">
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Виница</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Луцк</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Одесса</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Киев</li>
+									<li class="c-dropdown__item" data-dropdown-value="взрослых">Ужгород</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="filter__price">
+
+					<div class="price__inner">Стоимость:</div>
+					<div class="from-to">
+						<div class="price__from">
+							<span>От:</span>
+							<input id="range_number_from" type="text" placeholder="1000">
+						</div>
+						<div class="price__to">
+							<span>До:</span>
+							<input id="range_number_to" type="text" placeholder="10 000">
+						</div>
+					</div>
+					<form>
+						    
+						<div data-role="rangeslider" data-mini="true">
+							<div id="html5slider"></div>
+							       
+							    
+						</div>
+					</form>
+
+					<div class="btn__enter">
+						<span>Применить фильтр</span>
+					</div>
+					<div class="reset__btn">Сбросить фильтр</div>
+				</div>
+			</div>
+
+			<div class="all--results--wrapper">
+				<div class="results--wrapper">
+					<div class="results--header">
+						<div class="betr__offer">Мы подобрали лучшие предложения:</div>
+						<div class="sort__price">
+							<div class="sort__text">сортировать по <span>цене</span></div>
+							<img src="img/arrow-down.png" alt="">
+						</div>
+					</div>
+
+
+					<div class="result--request">
+						<div class="request--wrapper">
+							<div class="img__holet"></div>
+							<div class="request__descript">
+								<div class="descript--header">
+									<div class="tittle__hotel none-1020">Sunrise Grand Select Arabian</div>
+									<div class="hotel--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+									</div>
+									<div class="tittle__hotel none-320">Sunrise Grand Select <br>Arabian</div>
+								</div>
+								<div class="img__holet none-320"></div>
+								<div class="trip__view">
+									<div class="trip__decript">
+										<div class="trip__city">Шарм-эль-Шейх</div>
+										<div class="trip__leaving">Дата вылета: <span>13.06.2017</span></div>
+										<div class="trip__nights">Ночей: <span>7</span></div>
+										<div class="trip__place">Размещение:<span>2 взрослых + 1 ребенок</span></div>
+										<div class="trip__food">Питание:<span>ALL</span></div>
+										<div class="trip__flight">Места на рейсе: туда &#8658;/ обратно &#8656;</div>
+									</div>
+									<div class="trip__order">
+										<div class="order__price">12 790 грн</div>
+										<div class="price__dbl">Стоимость за <span>2 человека</span></div>
+										<div class="hotel_about">
+											<div class="hotel__foto">Фото отеля</div>
+											<div class="hotel__inf">Об отеле</div>
+										</div>
+										<div class="order__btn"><span>Заказать тур</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="result--request">
+						<div class="request--wrapper yellow">
+							<div class="img__holet"></div>
+							<div class="request__descript">
+								<div class="descript--header">
+									<div class="tittle__hotel none-1020">Sunrise Grand Select Arabian</div>
+									<div class="hotel--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+									</div>
+									<div class="tittle__hotel none-320">Sunrise Grand Select <br>Arabian</div>
+								</div>
+								<div class="img__holet none-320"></div>
+								<div class="trip__view">
+									<div class="trip__decript">
+										<div class="trip__city">Шарм-эль-Шейх</div>
+										<div class="trip__leaving">Дата вылета: <span>13.06.2017</span></div>
+										<div class="trip__nights">Ночей: <span>7</span></div>
+										<div class="trip__place">Размещение:<span>2 взрослых + 1 ребенок</span></div>
+										<div class="trip__food">Питание:<span>ALL</span></div>
+										<div class="trip__flight">Места на рейсе: туда &#8658;/ обратно &#8656;</div>
+									</div>
+									<div class="trip__order yellow">
+										<div class="order__price">12 790 грн</div>
+										<div class="price__dbl">Стоимость за <span>2 человека</span></div>
+										<div class="hotel_about">
+											<div class="hotel__foto">Фото отеля</div>
+											<div class="hotel__inf">Об отеле</div>
+										</div>
+										<div class="order__btn yellow"><span>Заказать тур</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="result--request none">
+						<div class="request--wrapper blue">
+							<div class="img__holet"></div>
+							<div class="request__descript">
+								<div class="descript--header">
+									<div class="tittle__hotel">Sunrise Grand Select Arabian</div>
+									<div class="hotel--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+									</div>
+								</div>
+								<div class="trip__view">
+									<div class="trip__decript">
+										<div class="trip__city">Шарм-эль-Шейх</div>
+										<div class="trip__leaving">Дата вылета: <span>13.06.2017</span></div>
+										<div class="trip__nights">Ночей: <span>7</span></div>
+										<div class="trip__place">Размещение:<span>2 взрослых + 1 ребенок</span></div>
+										<div class="trip__food">Питание:<span>ALL</span></div>
+										<div class="trip__flight">Места на рейсе: туда &#8658;/ обратно &#8656;</div>
+									</div>
+									<div class="trip__order blue">
+										<div class="order__price">12 790 грн</div>
+										<div class="price__dbl">Стоимость за <span>2 человека</span></div>
+										<div class="hotel_about">
+											<div class="hotel__foto">Фото отеля</div>
+											<div class="hotel__inf">Об отеле</div>
+										</div>
+										<div class="order__btn blue"><span>Заказать тур</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="result--request none">
+						<div class="request--wrapper">
+							<div class="img__holet"></div>
+							<div class="request__descript">
+								<div class="descript--header">
+									<div class="tittle__hotel">Sunrise Grand Select Arabian</div>
+									<div class="hotel--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+										<img src="img/star-gold.png" alt="" class="score--stars">
+									</div>
+								</div>
+								<div class="trip__view">
+									<div class="trip__decript">
+										<div class="trip__city">Шарм-эль-Шейх</div>
+										<div class="trip__leaving">Дата вылета: <span>13.06.2017</span></div>
+										<div class="trip__nights">Ночей: <span>7</span></div>
+										<div class="trip__place">Размещение:<span>2 взрослых + 1 ребенок</span></div>
+										<div class="trip__food">Питание:<span>ALL</span></div>
+										<div class="trip__flight">Места на рейсе: туда &#8658;/ обратно &#8656;</div>
+									</div>
+									<div class="trip__order">
+										<div class="order__price">12 790 грн</div>
+										<div class="price__dbl">Стоимость за <span>2 человека</span></div>
+										<div class="hotel_about">
+											<div class="hotel__foto">Фото отеля</div>
+											<div class="hotel__inf">Об отеле</div>
+										</div>
+										<div class="order__btn"><span>Заказать тур</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="wrapper">
+		<div class="slider--arrows">
+			<img src="img/left-slider.png" alt="">
+			<div class="page"><span>1</span></div>
+			<div class="page"><span>2</span></div>
+			<div class="page"><span>3</span></div>
+			<div class="page"><span>4</span></div>
+			<img src="img/right-slider.png" alt="">
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="sign--company">Разработано компанией <span>EasyWorld</span>, 2017</div>
+	</footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="scripts/nouislider.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
+

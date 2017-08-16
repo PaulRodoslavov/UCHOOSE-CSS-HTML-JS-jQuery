@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "Century Gothic"; 
+	src: url(mainFonts/GOTHICB.TTF); 
+}
+@font-face {
+	font-family: "Gothic"; 
+	src: url(mainFonts/GothamProBlack.ttf); 
+}
+@font-face {
+	font-family: "Gotham Pro"; 
+	src: url(mainFonts/GothamProRegular.ttf); 
+}

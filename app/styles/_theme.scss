@@ -1,0 +1,13 @@
+.ui-datepicker.header_entry_date_picker,
+.ui-datepicker.header_out_date_picker {
+  border-radius: 0;
+  border: 1px solid transparent !important;
+  left: 313px !important;
+  .ui-datepicker-header,
+  .ui-datepicker-title {border: none; background: white;}
+  .ui-datepicker-calendar {
+    .ui-state-default {background: white; border: none; text-align: center; font-size: 17px;}
+    .ui-state-highlight,
+    .ui-state-hover {background: lightgray; color: black;}
+  }
+}
